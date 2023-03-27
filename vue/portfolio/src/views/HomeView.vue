@@ -1,15 +1,18 @@
 <template>
-  <div>home 페이지</div>
-  <head></head>
-  <aboutme></aboutme>
-  <project></project>
+  <div class="main-box">
+    <top></top>
+    <ohead></ohead>
+    <oaboutme></oaboutme>
+    <oproject></oproject>
+  </div>
 </template>
 
 <script>
 /* eslint-disable */
-import head from "@/components/1head.vue";
-import aboutme from "@/components/2aboutme.vue";
-import project from "@/components/3project.vue";
+import top from "@/components/0top.vue";
+import ohead from "@/components/1head.vue";
+import oaboutme from "@/components/2aboutme.vue";
+import oproject from "@/components/3project.vue";
 export default {
   name: "app",
   data() {
@@ -17,11 +20,26 @@ export default {
   },
   methods: {},
   components: {
-    head,
-    aboutme,
-    project,
+    top,
+    ohead,
+    oaboutme,
+    oproject,
   },
 };
 </script>
 
-<style></style>
+<style scoped>
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-box {
+  /* background-image: url(/public/jang.png); */
+  position: relative;
+  background-size: cover;
+  background-color: wheat;
+  width: 100%;
+  height: 2000px;
+  margin: ;
+}
+</style>
