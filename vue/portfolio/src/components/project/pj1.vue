@@ -1,5 +1,5 @@
 <template>
-  <div class="three-box1">바닥페이지</div>
+  <div class="one-box1">안녕하세요</div>
 </template>
 
 <script>
@@ -18,14 +18,15 @@ export default {
   margin: 0;
   padding: 0;
 }
-.three-box1 {
+.one-box1 {
   position: absolute;
-  top: 60%;
-  right: 15%;
-  width: 70%;
-  height: 600px;
+  top: 0%;
+  left: 10%;
+  margin: 10rem 10rem;
+  width: 60%;
+  height: 300px;
   background: rgb(255, 255, 255);
-  box-shadow: -10px 10px 20px 0;
-  z-index: 2;
+  box-shadow: -10px 10px 20px 0px;
+  z-index: 6;
 }
 </style>

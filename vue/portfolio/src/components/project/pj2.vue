@@ -1,5 +1,5 @@
 <template>
-  <div class="one-box1">안녕하세요</div>
+  <div class="two-box1">중간페이지</div>
 </template>
 
 <script>
@@ -18,13 +18,14 @@ export default {
   margin: 0;
   padding: 0;
 }
-.one-box1 {
+.two-box1 {
   position: absolute;
-  margin: 10rem 10rem;
-  width: 70%;
-  height: 600px;
+  top: 38%;
+  left: 25%;
+  width: 60%;
+  height: 300px;
   background: rgb(255, 255, 255);
-  box-shadow: -10px 10px 20px 0px;
-  z-index: 6;
+  box-shadow: -10px 10px 20px 0;
+  z-index: 4;
 }
 </style>

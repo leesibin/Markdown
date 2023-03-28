@@ -1,18 +1,37 @@
 <template>
-  <div class="main-box">
+  <div class="head-box">
     <top></top>
-    <ohead></ohead>
-    <oaboutme></oaboutme>
-    <oproject></oproject>
+    <heads></heads>
+  </div>
+  <div class="about-box">
+    <div class="about-text">about</div>
+    <about2></about2>
+    <about1></about1>
+  </div>
+  <div class="skills-box">
+    <div class="skills-text">skills</div>
+    <skills1></skills1>
+    <skills2></skills2>
+  </div>
+  <div class="project-box">
+    <div class="project-text">project</div>
+    <pj1></pj1>
+    <pj2></pj2>
+    <pj3></pj3>
   </div>
 </template>
 
 <script>
 /* eslint-disable */
-import top from "@/components/0top.vue";
-import ohead from "@/components/1head.vue";
-import oaboutme from "@/components/2aboutme.vue";
-import oproject from "@/components/3project.vue";
+import top from "@/components/head/top.vue";
+import heads from "@/components/head/heads.vue";
+import about1 from "@/components/about/about1.vue";
+import about2 from "@/components/about/about2.vue";
+import skills1 from "@/components/skills/skills1.vue";
+import skills2 from "@/components/skills/skills2.vue";
+import pj1 from "@/components/project/pj1.vue";
+import pj2 from "@/components/project/pj2.vue";
+import pj3 from "@/components/project/pj3.vue";
 export default {
   name: "app",
   data() {
@@ -21,25 +40,60 @@ export default {
   methods: {},
   components: {
     top,
-    ohead,
-    oaboutme,
-    oproject,
+    heads,
+    about1,
+    about2,
+    skills1,
+    skills2,
+    pj1,
+    pj2,
+    pj3,
   },
 };
 </script>
 
-<style scoped>
+<style>
 * {
   margin: 0;
   padding: 0;
 }
-.main-box {
-  /* background-image: url(/public/jang.png); */
+li {
+  list-style: none;
+}
+.about-box {
+  background-color: #eeeae2;
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+}
+.about-text {
+  font-family: "Bowlby One SC", cursive;
+  font-size: 4rem;
+  color: #202020;
+}
+.skills-box {
+  background-color: #eeeae2;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+.skills-text {
+  font-family: "Bowlby One SC", cursive;
+  font-size: 48px;
+  text-align: center;
+  color: #202020;
+}
+.project-box {
   position: relative;
   background-size: cover;
-  background-color: wheat;
+  background-color: #c7a991;
   width: 100%;
-  height: 2000px;
-  margin: ;
+  height: 120vh;
+  margin: 0;
+}
+.project-text {
+  font-family: "Bowlby One SC", cursive;
+  font-size: 48px;
+  color: #202020;
 }
 </style>

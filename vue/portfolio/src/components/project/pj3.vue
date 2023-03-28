@@ -1,5 +1,5 @@
 <template>
-  <div class="two-box1">중간페이지</div>
+  <div class="three-box1">바닥페이지</div>
 </template>
 
 <script>
@@ -18,14 +18,14 @@ export default {
   margin: 0;
   padding: 0;
 }
-.two-box1 {
+.three-box1 {
   position: absolute;
-  top: 35%;
-  left: 20%;
-  width: 70%;
-  height: 600px;
+  top: 60%;
+  right: 20%;
+  width: 60%;
+  height: 300px;
   background: rgb(255, 255, 255);
   box-shadow: -10px 10px 20px 0;
-  z-index: 4;
+  z-index: 2;
 }
 </style>
