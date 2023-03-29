@@ -1,5 +1,7 @@
 <template>
-  <div class="one-box1">안녕하세요</div>
+  <div class="one-box1">
+    <span class="one-text">01</span>
+  </div>
 </template>
 
 <script>
@@ -27,6 +29,16 @@ export default {
   height: 300px;
   background: rgb(255, 255, 255);
   box-shadow: -10px 10px 20px 0px;
+  text-align: left;
   z-index: 6;
+}
+.one-text {
+  background-image: url("/public/tree.png");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-left: 3rem;
+  font-family: "Bowlby One SC", cursive;
+  font-size: 8rem;
 }
 </style>

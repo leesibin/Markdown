@@ -1,9 +1,9 @@
 <template>
   <div class="about2-box">
+    <div class="about2-text">EXPERIENCE</div>
     <p>- name : LEE SI BIN</p>
     <p>- adress : Changwon City</p>
     <p>- phone number : 010-2868-6628</p>
-    <p>- email : 010-2868-6628</p>
   </div>
 </template>
 
@@ -21,9 +21,14 @@ export default {
 <style>
 .about2-box {
   background-color: #eeeae2;
-  width: 48%;
+  width: 100%;
   margin: auto;
-  float: left;
+  flex: 1;
+}
+.about2-text {
+  font-family: "Bowlby One SC", cursive;
+  font-size: 4rem;
+  color: #202020;
 }
 .about2-box p {
   font-family: "Roboto", sans-serif;
